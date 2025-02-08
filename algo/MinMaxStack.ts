@@ -47,7 +47,7 @@ export class MinMaxStack {
     if (this.stack.length === 0) {
       throw new Error("Cannot peek at an empty stack");
     }
-    const [val] = this.stack.at(-1)!;
+    const [val] = this.stack[this.stack.length - 1];
     return val;
   }
 
@@ -78,7 +78,7 @@ export class MinMaxStack {
       this.stack.push([number, number, number]);
     } else {
       // Get current min/max from top of stack
-      const [, min, max] = this.stack.at(-1)!;
+      const [, min, max] = this.stack[this.stack.length - 1];
       // Push new element with updated min/max values
       this.stack.push([number, Math.min(min, number), Math.max(max, number)]);
     }
@@ -94,7 +94,7 @@ export class MinMaxStack {
     if (this.stack.length === 0) {
       throw new Error("Cannot get minimum of an empty stack");
     }
-    const [, min] = this.stack.at(-1)!;
+    const [, min] = this.stack[this.stack.length - 1];
     return min;
   }
 
@@ -108,7 +108,7 @@ export class MinMaxStack {
     if (this.stack.length === 0) {
       throw new Error("Cannot get maximum of an empty stack");
     }
-    const [, , max] = this.stack.at(-1)!;
+    const [, , max] = this.stack[this.stack.length - 1];
     return max;
   }
 }
