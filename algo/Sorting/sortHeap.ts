@@ -32,5 +32,5 @@ function heapify(arr: number[], n: number, i: number): void {
     }
 }
 
-const numbers = [4, 10, 3, 5, 1];
-console.log(heapSort(numbers)); // [1, 3, 4, 5, 10]
+const numbersheap = [4, 10, 3, 5, 1];
+console.log(heapSort(numbersheap)); // [1, 3, 4, 5, 10]

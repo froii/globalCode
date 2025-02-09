@@ -31,5 +31,5 @@ function merge(left: number[], right: number[]): number[] {
 console.timeEnd("MyTimer");
 
 // Використання
-const arr = [38, 27, 43, 3, 9, 82, 10, 5, 3, 4, 9, 11, 8, 4, 2, 14];
-console.log(mergeSort(arr)); // [3, 9, 10, 27, 38, 43, 82]
+const arrmerge = [38, 27, 43, 3, 9, 82, 10, 5, 3, 4, 9, 11, 8, 4, 2, 14];
+console.log(mergeSort(arrmerge)); // [3, 9, 10, 27, 38, 43, 82]

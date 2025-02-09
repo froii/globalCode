@@ -59,5 +59,5 @@ function timSort(arr: number[]): number[] {
     return arr;
 }
 
-const arr = [5, 21, 7, 23, 19, 3, 11, 4];
-console.log(timSort(arr)); // [3, 4, 5, 7, 11, 19, 21, 23]
+const arrrr = [5, 21, 7, 23, 19, 3, 11, 4];
+console.log(timSort(arrrr)); // [3, 4, 5, 7, 11, 19, 21, 23]
